@@ -1,114 +1,123 @@
-body {
-      background-color: #ffffff !important;
-      scroll-behavior: smooth;
-    }
-    * { border: 0 !important; }
-
-    /* NAV BAR */
-    .main-navbar {
-      background-color: #417fb4;
-      height: auto;
-      padding: 0.2rem 0;
-    }  
-    .main-navbar, 
-.inicio {
-  background: linear-gradient(120deg, #243e57 0%, #2e5273 50%, #1b2d40 100%);
-  background-attachment: fixed; /* Mantém o gradiente fixo na tela */
-  background-size: cover;       /* Faz o gradiente ocupar toda a área */
-  background-repeat: no-repeat;
-  color: white;
+body 
+{
+  background-color: #ffffff !important;
+  scroll-behavior: smooth;
 }
 
-    .navbar-logo { height: 6rem; }
-    .nav-link {
-      color: white;
-      font-weight: 400;
-    }
-    .nav-link:hover { color: #00d76f !important; }
-    .navbar-toggler-icon { filter: brightness(0) invert(1); }
-    .navbar-toggler { box-shadow: none !important; }
+/*  -----NAV BAR------- */
+.main-navbar 
+{
+  height: auto;
+  padding: 0.3rem 0;
+}   
+.main-navbar, .inicio 
+{
+  background: linear-gradient(120deg, #243e57 0%, #2e5273 50%, #1b2d40 100%);
+  background-attachment: fixed;
+  color: white;
+}
+.navbar-logo 
+{ 
+  height: 6rem;
+} 
+.nav-link 
+{
+  color: white;
+  font-weight: 400;
+}
+.nav-link:hover
+{ 
+  color: #00d76f !important;
+}
+.navbar-toggler-icon 
+{ 
+  filter: brightness(0) invert(1);
+}
+.navbar-toggler 
+{ 
+  border: none;
+  box-shadow: none !important;
+}
 
-    /* INICIO */
-    .inicio {
-      width: 100%;
- 
-      display: flex;
-      align-items: center;
-      padding: 3rem 0;
-      color: white;
-    }
-    .inicio h1 {
-      font-weight: 700;
-      font-size: 3.9rem;
-      line-height: 1.2;
-    }
-    .inicio p {
-      font-weight: 500;
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-    }
-    .inicio img {
-      max-width: 100%;
-      border-radius: 1rem;
-      box-shadow: 6px 6px 20px rgba(0,0,0,0.19);
-    }
-    .btnContato {
-      padding: 0.9rem 3.2rem;
-      background-color: #00d76f !important;
-      color: white;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-    .btnContato:hover { background-color: #016836 !important; }
+/*  -----INICIO------- */
+.inicio 
+{
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 3rem 0;
+  color: white;
+}
+.inicio h1 
+{
+  font-weight: 700;
+  font-size: 3.9rem;
+  line-height: 1.2;
+}
+.inicio p 
+{
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.inicio img 
+{
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(0,0,0,0.19);
+}
+.btnContato
+{
+  padding: 0.9rem 3.2rem;
+  background-color: #00d76f !important;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.btnContato:hover 
+{ 
+  background-color: #016836 !important; 
+  transform: translateY(-7px) scale(1.02);
+}
 
-    /* SERVIÇOS */
- .servicos {
+/*  -----SERVIÇOS------- */
+.servicos 
+{
   background-color: #417fb4;
   padding: 4rem 0;
   position: relative;
   box-shadow: 0 40px 50px -20px #2f5d85;
 }
-    .servicos h2 {
-      text-align: center;
-      color: white;
-      font-size: 3rem;
-    }
-.cardServico {
+.servicos h2 
+{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.cardServico 
+{
   text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-in-out;
-  
-  background-color: #fff;
   position: relative;
-  max-height: 400px; /* altura máxima que desejar */
+  height: auto;
+  padding: 0.6rem 0;
 }
-.cardServico:hover {
-  transform: translateY(-7px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.cardServico i {
-  background: linear-gradient(135deg, #417eb415, #66b3ff2c);
+.cardServico i 
+{
+  background-color: rgba(0, 255, 255, 0.055);
   padding: 1rem 1.2rem;
   border-radius: 50%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.048);
 }
-
-.card-title {
+.card-title 
+{
   font-weight: 600;
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
 }
-
-.card-text {
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Botão Saiba Mais estilizado */
-.cardServico .btn-link {
+.cardServico .btn-link 
+{
   color: #00d76f;
   font-weight: 600;
   font-size: 1rem;
@@ -122,19 +131,16 @@ body {
   color: #016836;
   text-decoration: underline;
 }
-
-/* Conteúdo expandido do collapse */
-.cardServico .collapse {
+.cardServico .collapse 
+{
   background-color: #f8f9fa;
   border-radius: 0.8rem;
-  margin-top: 1rem;
   padding: 1rem 1.2rem;
-  box-shadow: inset 0 0 8px rgb(0 0 0 / 0.05);
   text-align: left;
   font-size: 0.95rem;
   color: #333;
+  transition: all 0.3s ease-in-out;
 }
-
 .cardServico .collapse ul {
   padding-left: 1.2rem;
   margin: 0;
@@ -142,51 +148,64 @@ body {
   line-height: 1.5;
 }
 
-
-    /* SOBRE MIM */
-  .sobre-mim {
-  background-color: #2f5d85;  /* Azul harmonioso com o gradiente */
+/*  -----SOBRE MIM------- */
+.sobre-mim 
+{
+  background-color: #2f5d85;  
   padding: 4rem 0.5rem;
 }
 
-.sobre-mim h2 {
+.sobre-mim h2 
+{
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #f9fbfc; /* Claro para contraste */
+  color: #f9fbfc;
 }
-
-.sobre-mim p {
+.sobre-mim p 
+{
   font-size: 1.2rem;
   line-height: 1.8;
   text-align: justify;
-  color: #e4ebf2; /* Tom claro, legível sobre o fundo */
+  color: #e4ebf2; 
+}
+
+/*  -----Botão WhatsApp------- */
+.whatsapp-btn 
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.whatsapp-btn:hover 
+{
+  background: #1ebe5d;
+  transform: scale(1.1);
 }
 
 
-    /* Botão WhatsApp */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 1.8rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      z-index: 999;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .whatsapp-btn:hover {
-      background: #1ebe5d;
-      transform: scale(1.1);
-    }
+
+
+
+
+
+
+
+
 
     /* Responsividade */
     @media (max-width: 992px) {
       .inicio h1 { font-size: 2.5rem; }
-      .inicio img { max-width: 80%; margin-top: 1.5rem; }
+      .inicio img { max-width: 80%; margin-top: 1.5rem;}
+      
     }
     @media (max-width: 576px) {
       .inicio h1 { font-size: 2.3rem; }
